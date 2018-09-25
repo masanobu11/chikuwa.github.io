@@ -1,0 +1,58 @@
+/* パソコンで見たときは"pc"のclassがついた画像が表示される */
+body{
+  background-color: snow;
+}
+
+.pc { display: block !important; }
+.sp { display: none !important; }
+
+/* スマートフォンで見たときは"sp"のclassがついた画像が表示される */
+@media only screen and (max-width: 600px) {
+.pc { display: none !important; }
+.sp { display: block !important; }
+}
+
+.main{
+  text-align: center;
+}
+
+.logo{
+  width: 500px;
+  margin: 0 auto;
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+
+.logo_sp{
+  width: 90%;
+  margin: 0 auto;
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+
+.chikuwa{
+  display: flex;
+  justify-content: center;
+}
+
+.LR{
+  height: 200px;
+  margin-left: -1px;
+    margin-right: -1px;
+}
+
+.responsive{
+  width: 60%;
+  height: 200px;
+}
+
+
+.responsive_sp{
+  width: 40%;
+}
+
+.movie{
+  margin-top: 5%;
+  text-align: center;
+
+}
